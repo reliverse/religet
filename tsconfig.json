@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "~/*": ["./src-main/*"],
+      "@/*": ["./src/*"],
+      "#/*": ["./examples/*"]
+    },
+
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "noEmit": true,
+
+    "exactOptionalPropertyTypes": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": false,
+
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
+    "jsx": "react-jsx"
+  },
+
+  "include": ["**/*.ts", "**/*.tsx", "reset.d.ts", "eslint.config.js"],
+  "exclude": ["node_modules", "dist-npm", "dist-jsr", "dist-libs"]
+}

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+  },
+  "include": ["src-main", "src", "eslint.config.js"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

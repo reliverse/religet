@@ -1,0 +1,28 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "project": ["**/*.{ts,js}"],
+  "entry": [
+    "**/*.{config,cfg}.{ts,js}",
+    "src-main/main.ts",
+    "src-main/**/*-main.ts"
+  ],
+  "ignore": [
+    "node_modules/**/*.*",
+    "dist-jsr/**/*.*",
+    "dist-npm/**/*.*",
+    "dist-libs/**/*.*",
+    "src-tauri/**/*.*",
+    "src-main/types.ts",
+    "reliverse.ts"
+  ],
+  "ignoreBinaries": ["relidler"],
+  "ignoreDependencies": [
+    "@tauri-apps/api",
+    "@tauri-apps/plugin-opener",
+    "react",
+    "react-dom",
+    "@reliverse/cli-cfg",
+    "@types/react",
+    "@types/react-dom"
+  ]
+}

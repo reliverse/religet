@@ -1,0 +1,31 @@
+{
+  "name": "@reliverse/reglob-cli",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@eslint/js": "^9.24.0",
+    "@reliverse/cli-cfg": "^1.6.5",
+    "@reliverse/relidler-cfg": "^1.1.3",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@types/bun": "^1.2.9",
+    "@types/node": "^22.14.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-no-relative-import-paths": "^1.6.1",
+    "eslint-plugin-perfectionist": "^4.11.0",
+    "knip": "^5.50.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1"
+  },
+  "description": "@reliverse/rebun is a beginner-friendly wrapper around the Bun runtime API. Because Bun is fast-first — but not always beginner-first.",
+  "scripts": {
+    "pub": "relidler",
+    "dev": "bun src/main.ts",
+    "latest": "bun update --latest && bun check",
+    "check": "tsc --noEmit && eslint --cache --fix . && biome check --fix --unsafe . && knip-bun",
+    "agg": "relidler tools --tool agg --input src/libs/core/core-impl --out src/libs/core/core-main.ts --recursive --named --strip src/libs/core"
+  },
+  "type": "module",
+  "dependencies": {
+    "@reliverse/prompts": "^1.6.1"
+  }
+}
